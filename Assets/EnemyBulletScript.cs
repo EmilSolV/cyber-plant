@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyBulletScript : MonoBehaviour
 {
-    private GameObject player;
-    private Rigidbody2D rb;
     public float force;
+    public float damage;
     public float rotation;
+
+    private GameObject player;
+    private Rigidbody2D rb;  
     private float timer;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +40,7 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<playerHealth>().health -= damage;
             Destroy(gameObject);
         }
         
