@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public HUD hud;
-    private int piezasRecolectadas = 4;
+    private int piezasRecolectadas = 0;
 
     private void Awake()
     {
