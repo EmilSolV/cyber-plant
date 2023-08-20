@@ -26,7 +26,7 @@ public class playerHealth : MonoBehaviour
         {
             isDead = true;
             gameplayMenu.GameOver();
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }

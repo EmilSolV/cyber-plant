@@ -9,7 +9,31 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public HUD hud;
+    public GameObject pauseUI;
     private int piezasRecolectadas = 0;
+
+    public static bool gameIsPaused;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameIsPaused = !gameIsPaused;
+            PauseGame();
+        }
+    }
+    void PauseGame()
+    {
+        if (gameIsPaused)
+        {
+            Time.timeScale = 0f;
+            pauseUI.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pauseUI.SetActive(false);
+        }
+    }
 
     private void Awake()
     {
