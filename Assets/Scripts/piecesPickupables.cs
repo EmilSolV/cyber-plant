@@ -20,7 +20,6 @@ public class piecesPickupables : MonoBehaviour
         // }   
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("found piece");
             GameManager.Instance.ObjectFind();
             Destroy(this.gameObject);
         }

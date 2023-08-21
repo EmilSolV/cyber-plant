@@ -5,26 +5,19 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour
 {
-    public GameObject[] piezas;
+    public GameObject[] pieces;
 
     void Start()
     {
         // Desactivar los objetos en el array al inicio del juego
-        foreach (GameObject pieza in piezas)
+        foreach (GameObject piece in pieces)
         {
-            pieza.SetActive(false);
+            piece.SetActive(false);
         }
     }
     
-    public void ActivarPiezas(int indice)
+    public void RecollectPiece(int index)
     {
-        // foreach (GameObject pieza in piezas)
-        // {
-        //     pieza.SetActive(true);
-        //     
-        // }
-        
-        piezas[indice].SetActive(true);
-        Debug.Log("dentro de activar piezas");
+        pieces[index].SetActive(true);
     }
 }

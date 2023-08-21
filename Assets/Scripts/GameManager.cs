@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public HUD hud;
     public GameObject pauseUI;
-    private int piezasRecolectadas = 0;
+    private int foundPieces = 0;
 
     public static bool gameIsPaused;
     void Update()
@@ -50,15 +50,7 @@ public class GameManager : MonoBehaviour
     
     public void ObjectFind()
     {
-        // if (piezasRecolectadas == 4)
-        // {
-        //     return false;
-        // }
-        Debug.Log("antes del hud");
-        hud.ActivarPiezas(piezasRecolectadas);
-        piezasRecolectadas += 1;
-        Debug.Log("despues del hud");
-
-        // return true;
+        hud.RecollectPiece(foundPieces);
+        foundPieces += 1;
     }
 }
