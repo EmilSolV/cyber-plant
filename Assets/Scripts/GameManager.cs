@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
             pauseUI.SetActive(false);
         }
     }
+    public void Continue()
+    {
+        Time.timeScale = 1;
+        pauseUI.SetActive(false);
+    }
 
     private void Awake()
     {

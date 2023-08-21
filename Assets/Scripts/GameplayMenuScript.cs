@@ -10,6 +10,7 @@ public class GameplayMenuScript : MonoBehaviour
     {
         gameOverUI.SetActive(true);
     }
+   
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
