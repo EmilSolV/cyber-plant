@@ -6,8 +6,9 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPos;
-    private GameObject player;
-    private float timer;
+    //private GameObject player;
+    private float timer; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,20 +18,16 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {      
-        float distance = Vector2.Distance(transform.position, player.transform.position);
-        //if(distance < 4)
-        //{
-            timer += Time.deltaTime;
+        timer += Time.deltaTime;
 
-            if (timer > 1)
-            {
-                timer = 0;
-                shoot();
-            }
-        //}             
+        if (timer > 1)
+        {
+            timer = 0;
+            Shoot();
+        }        
     }
 
-    void shoot()
+    void Shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
