@@ -6,7 +6,7 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPos;
-    //private GameObject player;
+    private GameObject player;
     private float timer; 
 
     // Start is called before the first frame update
@@ -29,7 +29,10 @@ public class EnemyShooting : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        if (player != null)
+        {
+            Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        }
     }
 }
 
