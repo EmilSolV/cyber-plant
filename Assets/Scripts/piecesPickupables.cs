@@ -8,8 +8,9 @@ public class piecesPickupables : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-         
-        if (other.gameObject.CompareTag("Player"))
+        Debug.Log(gameObject.tag);
+        Debug.Log(other.gameObject.tag);
+        if (gameObject.CompareTag("Piece") && other.CompareTag("Player"))
         {
             GameManager.Instance.ObjectFind();
             Destroy(this.gameObject);

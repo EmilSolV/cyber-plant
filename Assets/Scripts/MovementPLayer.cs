@@ -32,7 +32,6 @@ public class MovementPLayer : MonoBehaviour
         if (collision.CompareTag("Box"))
         {
             isHittable = false;
-            Debug.Log("Player bool false");
         } 
     }
     
@@ -41,7 +40,6 @@ public class MovementPLayer : MonoBehaviour
         if (collision.CompareTag("Box"))
         {
             isHittable = true;
-            Debug.Log("Player bool true");
         } 
     }
     
