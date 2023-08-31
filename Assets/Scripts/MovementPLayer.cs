@@ -11,13 +11,25 @@ public class MovementPLayer : MonoBehaviour
     public bool isHittable = true;
     private Rigidbody2D rb2D;
 
+    private Animator anim;
+
     private void Start()
     {
+        anim = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
+        anim.SetBool("goUp", Input.GetButtonDown("Up"));
+        if(Input.GetButtonDown("Up"))
+        {
+            anim.Play("player up");
+        }
+        anim.SetBool("goDown", Input.GetButtonDown("Down"));
+        anim.SetBool("goRight", Input.GetKey(KeyCode.D));
+        anim.SetBool("goLeft", Input.GetKey(KeyCode.A));
+
         direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
     }
 

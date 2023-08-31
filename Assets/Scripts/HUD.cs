@@ -6,6 +6,7 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public GameObject[] pieces;
+    public GameObject winUI;
 
     void Start()
     {
@@ -18,6 +19,13 @@ public class HUD : MonoBehaviour
     
     public void RecollectPiece(int index)
     {
-        pieces[index].SetActive(true);
+        if (pieces.Length == index + 1)
+        {
+            Time.timeScale = 0f;
+            winUI.SetActive(true);
+        }
+        else {
+            pieces[index].SetActive(true); 
+        }
     }
 }
