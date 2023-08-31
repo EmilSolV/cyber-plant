@@ -21,7 +21,9 @@ public class HUD : MonoBehaviour
     {
         if (pieces.Length == index + 1)
         {
-            Time.timeScale = 0f;
+            GameObject enemy = GameObject.FindWithTag("Enemy");
+            Destroy(enemy);
+
             winUI.SetActive(true);
         }
         else {
