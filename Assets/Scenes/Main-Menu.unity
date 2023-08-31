@@ -478,7 +478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &566157677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &702666578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -748,7 +748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10024945, y: 0.65000004}
   m_AnchorMax: {x: 0.8996788, y: 0.89166903}
-  m_AnchoredPosition: {x: 54.3, y: -31.9}
+  m_AnchoredPosition: {x: 44.199993, y: -31.9}
   m_SizeDelta: {x: 93.4131, y: 48.5547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756613679
@@ -1372,7 +1372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10024945, y: 0.65000004}
   m_AnchorMax: {x: 0.8996788, y: 0.89166903}
-  m_AnchoredPosition: {x: -32.8, y: -33.9}
+  m_AnchoredPosition: {x: -42.9, y: -33.9}
   m_SizeDelta: {x: 93.4131, y: 48.5547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989076393
@@ -1423,17 +1423,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'Isa
-
-
-    Fede
-
-    Yami
-
-
-    Emil Vasquez
-
-    Ceci'
+  m_Text: "Isa\xEDas Barrera\n\nFederico Brown\nYamila Gigena\n\nEmil Vasquez\nCecilia
+    Arias"
 --- !u!222 &1989076395
 CanvasRenderer:
   m_ObjectHideFlags: 0
