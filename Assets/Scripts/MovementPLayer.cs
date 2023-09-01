@@ -31,6 +31,11 @@ public class MovementPLayer : MonoBehaviour
         anim.SetFloat("MovementX", movimientoX);
         anim.SetFloat("MovementY", movimientoY);
 
+        if(movimientoX !=0 || movimientoY !=0 )
+        {
+            anim.SetFloat("UltimoX",movimientoX);
+            anim.SetFloat("UltimoY",movimientoY);
+        }
         direction = new Vector2(movimientoX, movimientoY).normalized;
 
         

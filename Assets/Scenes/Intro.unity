@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9397681, b: 0.5330188, a: 1}
+  m_Color: {r: 0.9433962, g: 0.8156007, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -182,21 +182,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5b1de4fefd9b5944489d1fd3a042d605, type: 3}
     m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 10
+    m_MaxSize: 15
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "En este juego vamos a ayudar a nuestra amiga una planta modificada gen\xE9ticamente
-    por una cient\xEDfica despiadada que no deja que escuche su disco de Chayanne
-    en paz. Ayudala a encontrar las piezas para que pueda sonar su canci\xF3n favorita!"
+    m_LineSpacing: 2
+  m_Text: tienes que ayudar a nuestra amiga, una planta modificada geneticamente
+    por una cientifica despiadada que no deja que escuche su disco de Chayanne en
+    paz. Ayudala a encontrar las piezas para que pueda sonar su cancion favorita
 --- !u!222 &26988848
 CanvasRenderer:
   m_ObjectHideFlags: 0
