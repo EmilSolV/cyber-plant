@@ -15,8 +15,9 @@ public class PlayerController : MonoBehaviour
         void Update()
         {
             // Set the boolean parameter "IsWalking" to trigger the walk animation.
-            bool goUp = Input.GetKey(KeyCode.W); // Replace with your condition.
-            anim.SetBool("goUp", goUp);
+            // bool goUp = Input.GetKey(KeyCode.W); 
+            // Replace with your condition.
+            // anim.SetBool("goUp", goUp);
         }
     
 }

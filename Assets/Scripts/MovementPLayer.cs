@@ -11,6 +11,10 @@ public class MovementPLayer : MonoBehaviour
     public bool isHittable = true;
     private Rigidbody2D rb2D;
 
+    private float movimientoX;
+    private float movimientoY;
+
+    
     private Animator anim;
 
     private void Start()
@@ -21,16 +25,28 @@ public class MovementPLayer : MonoBehaviour
 
     private void Update()
     {
-        anim.SetBool("goUp", Input.GetButtonDown("Up"));
-        if(Input.GetButtonDown("Up"))
-        {
-            anim.Play("player up");
-        }
-        anim.SetBool("goDown", Input.GetButtonDown("Down"));
-        anim.SetBool("goRight", Input.GetKey(KeyCode.D));
-        anim.SetBool("goLeft", Input.GetKey(KeyCode.A));
+        movimientoX = Input.GetAxisRaw("Horizontal");
+        movimientoY = Input.GetAxisRaw("Vertical");
 
-        direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+        anim.SetFloat("MovementX", movimientoX);
+        anim.SetFloat("MovementY", movimientoY);
+
+        direction = new Vector2(movimientoX, movimientoY).normalized;
+
+        
+        
+        
+        //////
+        // anim.SetBool("goUp", Input.GetButtonDown("Up"));
+        // if(Input.GetButtonDown("Up"))
+        // {
+        //     anim.Play("player up");
+        // }
+        // anim.SetBool("goDown", Input.GetButtonDown("Down"));
+        // anim.SetBool("goRight", Input.GetKey(KeyCode.D));
+        // anim.SetBool("goLeft", Input.GetKey(KeyCode.A));
+
+        // direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
     }
 
     private void FixedUpdate()
